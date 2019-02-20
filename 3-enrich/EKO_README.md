@@ -9,7 +9,12 @@ Knowing nothing about Scala or its ecosystem, I was able to hack it together usi
 
 ## Prerequisites
 
-- SBT 2.11
+- Java JDK 8: `sudo apt install openjdk-8-jdk-headless`
+- SBT 2.11:
+    + `echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list`
+    + `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`
+    + `sudo apt-get update`
+    + `sudo apt-get install sbt`
 
 ## Pack scala-common-enrich
 
@@ -25,3 +30,8 @@ Knowing nothing about Scala or its ecosystem, I was able to hack it together usi
 - `sbt "project kinesis" assembly`
 - JAR artifact will be under `./3-enrich/stream-enrich/kinesis/target/scala-2.11`, should be around 75MB
 - Create a zip archive from JAR (zip filename is same as JAR's but dashes are replaced with underscores)
+
+## Useful Links
+
+- [Installing SBT on Ubuntu](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)
+- [Compile stream-enrich from source](https://github.com/snowplow/snowplow/wiki/Install-Stream-Enrich#22-compile-from-source)
