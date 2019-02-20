@@ -25,7 +25,7 @@ lazy val commonDependencies = Seq(
   Dependencies.Libraries.json4sJackson,
   Dependencies.Libraries.pureconfig,
   Dependencies.Libraries.snowplowRawEvent,
-  Dependencies.Libraries.snowplowCommonEnrich,
+  /* Dependencies.Libraries.snowplowCommonEnrich, */
   Dependencies.Libraries.igluClient,
   Dependencies.Libraries.snowplowTracker,
   // Test

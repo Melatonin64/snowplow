@@ -15,6 +15,10 @@
 // =======================================================
 // scalafmt: {align.tokens = [":="]}
 // =======================================================
+
+// [Required] Enable plugin and automatically find def main(args:Array[String]) methods from the classpath
+enablePlugins(PackPlugin)
+
 lazy val root = project
   .in(file("."))
   .settings(

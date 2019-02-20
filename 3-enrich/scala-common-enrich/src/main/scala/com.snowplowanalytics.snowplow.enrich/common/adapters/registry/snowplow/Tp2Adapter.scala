@@ -47,8 +47,15 @@ object Tp2Adapter extends Adapter {
 
   // Expected content types for a request body
   private object ContentTypes {
-    val list = List("application/json", "application/json; charset=utf-8", "application/json; charset=UTF-8")
-    val str  = list.mkString(", ")
+    val list = List(
+      "application/json",
+      "application/json; charset=utf-8",
+      "application/json; charset=UTF-8",
+      "text/plain",
+      "text/plain; charset=utf-8",
+      "text/plain; charset=UTF-8"
+    )
+    val str = list.mkString(", ")
   }
 
   // Request body expected to validate against this JSON Schema

@@ -72,7 +72,7 @@ object Dependencies {
     val pureconfig           = "com.github.pureconfig"            %% "pureconfig"                % V.pureconfig
     val snowplowRawEvent     = "com.snowplowanalytics"            %  "snowplow-thrift-raw-event" % V.snowplowRawEvent
     val igluClient           = "com.snowplowanalytics"            %% "iglu-scala-client"         % V.igluClient
-    val snowplowCommonEnrich = "com.snowplowanalytics"            %% "snowplow-common-enrich"    % V.snowplowCommonEnrich
+    /* val snowplowCommonEnrich = "com.snowplowanalytics"            %% "snowplow-common-enrich"    % V.snowplowCommonEnrich */
     val snowplowTracker      = "com.snowplowanalytics"            %% "snowplow-scala-tracker"    % V.snowplowTracker
     // Scala (test only)
     val specs2               = "org.specs2"            %% "specs2"                    % V.specs2         % "test"
